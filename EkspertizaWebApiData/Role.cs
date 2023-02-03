@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace EkspertizaWebApi.Data;
+namespace EkspertizaWebApiData;
 
 public class Role : IdentityRole<Guid>
 {

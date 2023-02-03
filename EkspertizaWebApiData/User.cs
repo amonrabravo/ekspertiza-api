@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 
-namespace EkspertizaWebApi.Data;
+namespace EkspertizaWebApiData;
 
 public class User : IdentityUser<Guid>
 {
