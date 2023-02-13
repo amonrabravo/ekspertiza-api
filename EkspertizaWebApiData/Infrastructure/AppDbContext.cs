@@ -20,7 +20,6 @@ public class AppDbContext : IdentityDbContext<User, Role, Guid>
     }
 
     public DbSet<City> Cities { get; set; }
-    public DbSet<District> Districts { get; set; }
     public DbSet<Organization> Organizations { get; set; }
     public DbSet<Province> Provinces { get; set; }
     public DbSet<Service> Services { get; set; }

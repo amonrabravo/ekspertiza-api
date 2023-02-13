@@ -13,7 +13,7 @@ public class City
 
     public Province? Province { get; set; }
 
-    public ICollection<District> Districts { get; set; } = new HashSet<District>();
+    public ICollection<Service> Services { get; set; } = new HashSet<Service>();
 }
 
 public class CityEntityTypeConfiguration : IEntityTypeConfiguration<City>
@@ -30,7 +30,7 @@ public class CityEntityTypeConfiguration : IEntityTypeConfiguration<City>
             .IsRequired();
 
         builder
-            .HasMany(p => p.Districts)
+            .HasMany(p => p.Services)
             .WithOne(p => p.City)
             .HasForeignKey(p => p.CityId)
             .OnDelete(DeleteBehavior.Restrict);
